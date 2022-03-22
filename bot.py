@@ -418,7 +418,7 @@ async def button(bot, cmd: CallbackQuery):
 				return
 			except Exception:
 				await cmd.message.edit(
-					text="Something went Wrong. Contact my [Support Group](https://t.me/DevsZone).",
+					text="Something went Wrong. Contact my [Support Group](https://t.me/SharkUserbot).",
 					parse_mode="markdown",
 					disable_web_page_preview=True
 				)
@@ -426,7 +426,7 @@ async def button(bot, cmd: CallbackQuery):
 		await cmd.message.edit(
 			text=Config.USAGE_WATERMARK_ADDER,
 			parse_mode="Markdown",
-			reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Developer", url="https://t.me/AbirHasan2005"), InlineKeyboardButton("Support Group", url="https://t.me/DevsZone")], [InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")]]),
+			reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Developer", url="https://t.me/Blvckcards"), InlineKeyboardButton("Support Group", url="https://t.me/SharkUserbot")], [InlineKeyboardButton("Bots Channel", url="https://t.me/Blvckcards")]]),
 			disable_web_page_preview=True
 		)
 
@@ -443,7 +443,7 @@ async def button(bot, cmd: CallbackQuery):
 				user = await bot.get_chat_member(int(Config.UPDATES_CHANNEL), cmd.message.chat.id)
 				if user.status == "kicked":
 					await cmd.message.edit(
-						text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/DevsZone).",
+						text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/SharkUserbot).",
 						parse_mode="markdown",
 						disable_web_page_preview=True
 					)
